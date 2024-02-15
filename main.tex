@@ -1,0 +1,350 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% Edited By: Shakil Ahmed
+% License : MIT
+%------------------------
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+
+% Define custom icon styles
+\newcommand{\iconcolor}{blue} % Change the color here
+\newcommand{\iconsize}{1.2em} % Change the size here
+\begin{center}
+    \textbf{\Huge \scshape Md Shakil Ahmed} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{.9pt} \href{tel:8801682523401}{+880 130 846 6291}
+    $|$
+    \faAt \hspace{.3pt} \href{mailto:ahmedmshakil1@gmail.com}{ahmedmshakil1@gmail.com}
+    $|$
+    \faLinkedinSquare \hspace{.3pt} \href{https://www.linkedin.com/in/ahmedmshakil/}{LinkedIn}
+    $|$
+    \faGithub \hspace{.3pt} \href{https://github.com/ahmedmshakil}{GitHub}
+    $|$
+    \faGlobe \hspace{.3pt} \href{https://ahmedmshakil.netlify.app/}{Portfolio}
+    $|$
+    \faMapMarker \hspace{.5pt} \href{https://maps.app.goo.gl/yXjbz1LHBvWixLsa6}{Dhaka, Bangladesh}
+\end{center}
+
+
+%----------- Summary -----------
+
+\section{Summary}
+  \vspace{4pt}
+  \resumeSubHeadingListStart
+ {A Computer Science and Engineering student from Independent University, Bangladesh who is Self-motivated, highly passionate  for the technology and possesses a strong interest in researching data science, Natural language processing and machine learning in the hopes of making a substantial impact on the field.}
+  \resumeSubHeadingListEnd
+
+
+%----------- Summary -----------
+
+\section{Research Interests}
+  \vspace{4pt}
+  \resumeSubHeadingListStart
+ {Data Science, Machine Learning, Natural Language Processing, Image Processing, Bioinformatics, Blockchain, Software Engineering, System Design}
+   \resumeSubHeadingListEnd
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{4pt}
+  \resumeSubHeadingListStart
+    
+    \resumeEducationHeading
+      {Independent University, Bangladesh
+      % \normalfont{(Admission rate: 0.09\%)}
+      }{Dhaka, Bangladesh}
+      {B.Sc. in Computer Science and Engineering;   \textbf{}}{January 2021 \textbf{--} December 2024}
+    \textbf{Ongoing} {Thesis: credit risk rating system using Blockchain}
+
+        \resumeItemListStart
+             \resumeItem{\textbf{Relevant coursework:} Calculus I-II, Differential Equations, Digital System Design,Data Structure, Algorithms, Object Oriented Programming, Database Management System, Distributed Database System}
+         \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+
+
+%----------- WORK EXPERIENCE -----------
+
+\section{Work Experience}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+        
+    \resumeSubheading
+      {Independent University, Bangladesh}{Bashundhara R/A, Dhaka, Bangladesh }
+      {Undergraduate Teaching Assistant}{Jan 2023 \textbf{--} Sep 2023}
+        \resumeItemListStart
+            \resumeItem{\textbf{Courses Taught:} Structured Programming (Programming language: Python), Database Management.}
+        \resumeItemListEnd
+    
+    \resumeSubheading
+      {Klatch Technologies}{Assam, India (Remote)}
+      {AI Research and Development Intern}{Oct 2023 \textbf{--} Dec 2023}
+        \resumeItemListStart
+            \resumeItem{Implemented common NLP tasks using transformers such as named-entity recognition (NER), part-of-speech (POS) tagging, sentiment analysis, text classification, and extractive/generative question answering.}
+            \resumeItem{Intent-based Query Model for Question Answering}
+            \resumeItem{Worked on a custom Medical domain question-answering system by fine-tuning a BERT base model transformer. Evaluated the exact match and F1 scores using different Medical data sets and compared the evaluation results.}
+        \resumeItemListEnd
+    \resumeSubheading
+      {Student Tutor}{Uttara, Dhaka, Bangladesh (Part-time)}
+      {Teacher}{Feb 2020 \textbf{--} present}
+        \resumeItemListStart
+
+            \resumeItem{Work with students, and indoctrinate them about problems they are having with the course material.}
+            \resumeItem{Holding 15 hours per week's tution hours.}
+            \resumeItem{Lead discussion sessions with students.}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+  
+%----------- RESEARCH EXPERIENCE -----------
+
+\section{Research Experience}
+  \vspace{4pt}
+  {\textbf{Research On going}
+  \vspace{30pt}
+  
+
+
+
+
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+\section{Awards \& Achievements}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+    
+        \textbf{Ahsanullah Master Smriti Scholarship:}{ Awarded to the 9th and 17th place twice(2008, 2009) for outstanding performance among Gazipur District at Primary Level Scholarship Exam.} \\ \vspace{3pt}
+         \textbf{Best Athelate Award:}{ Awarded to the Champion price twice(2014, 2016) for securing three 1st place in the Annual sports competition in UHSC  } \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+
+
+%----------- PROJECTS -----------
+
+\section{Projects}
+    \vspace{3pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Invoice Generator Using Python } $|$ \emph{\href{https://github.com/ahmedmshakil/Invoice_Generator}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{In this project, I create a real time invoice generator using python to generate automated shopping invoice. }
+          \resumeItemListEnd
+      
+         
+                \resumeProjectHeading
+        {\textbf{Student Performance Monitoring Syatem 2.0 for IUB} $|$ \emph{\href{https://github.com/ahmedmshakil/spms2.0}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{This is the database management project that we implement graphs and charts for the all users those who using iras.}
+            \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Hotel Management System Covid-19} $|$ \emph{\href{https://github.com/ahmedmshakil/The-hotel-management-system-Covid-19}{\color{blue}GitHub}}}{}
+          \resumeItemListStart
+            \resumeItem{Real-time Employee management system object and Face Recognition using RCNN, Redis Docker, Django}
+            \resumeItem{Manage category of room, Health care, and payment. Based on the customer's situation suggest a hospital}
+          \resumeItemListEnd
+      
+      
+      
+      
+    \resumeSubHeadingListEnd
+
+
+
+%----------- SKILLS -----------
+
+\section{Skills}
+  \vspace{2pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Programming:}{ C++, Java, Python, JavaScript, MATLAB, SQL, MySQL} \\ \vspace{3pt}
+        
+        \textbf{Technologies:}{ Git,Github, Gitlab, GitKraken, OpenCV} \\ \vspace{3pt}
+        
+        \textbf{Languages:}{ Bangla (Native), English (Professional),  French (Elementary)}
+        
+        % \textbf{Frameworks}{: X, X, X} \\
+        % \textbf{Developer Tools}{: X, X, X} \\
+        % \textbf{Libraries}{: X, X, X} \\
+        % \textbf{Applications}{: X, X, X}
+    }}
+  \resumeSubHeadingListEnd
+
+
+\section{Competitive Programming}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+    \small{\item{
+        \textbf{Problem-Solving: } {Solved numerous data structure and algorithmic problems and participated in online programming contests in various online judges including Codeforces, Codechef and Atcoder.} \\ \vspace{3pt}
+        
+    }}
+  \resumeSubHeadingListEnd
+
+%----------- RELEVANT COURSEWORK -----------
+
+
+
+
+
+%----------- CERTIFICATES -----------
+
+
+
+
+
+%----------- ORGANIZATIONS -----------
+
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Table Tannis, Fitness, Eight-ball}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+
+
+
+
+%-------------------------------------------
+\end{document}
